@@ -134,7 +134,9 @@ nav > ul > li > a {
 }
 
 .banner-description {
-  margin: 30px 0;
+  margin: 27px 0;
+  line-height: 24px;
+  font-size: 0.95rem;
 }
 
 .banner-img {
@@ -202,8 +204,8 @@ nav > ul > li > a {
 
 /* section change your habbits */
 .change-habbit {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .habbit-img > img {
@@ -218,21 +220,28 @@ nav > ul > li > a {
 }
 
 .change-habbit-title {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 2.85rem;
+  font-weight: 900;
+  margin-bottom: 13px;
 }
 
 .change-habbit-subtitle {
   padding: 0 180px;
-  margin-top: 5px;
   margin-bottom: 50px;
+  font-size: 0.83rem;
 }
 
 .habbit-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 29px;
+  margin-bottom: 6px;
+  font-size: 1.07rem;
+  font-weight: 600;
 }
+
+.habbit-subtitle {
+  font-size: 0.83rem;
+}
+
 
 /* Extra Run Section style */
 .run-extra {
@@ -240,37 +249,41 @@ nav > ul > li > a {
 }
 
 .run-extra-container {
-  gap: 190px;
   background-color: #222222;
   border-radius: 15px;
   align-items: center;
 }
 
 .run-extra-text {
+  margin-top: 38px;
+  margin-bottom: 38px;
   margin-left: 50px;
-  width: 50%;
+  min-width: 272px;
+  max-width: 420px;
 }
 
 .run-extra-title {
   font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 900;
+  margin-bottom: 13px;
 }
 
 .run-extra-subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  font-size: 0.83rem;
+  line-height: 23px;
 }
 
 
 .run-extra-img {
-  padding: 30px;
-  width: 50%;
+  max-width: 366px;
+  max-height: 312px;
+  margin-left: 165px;
 }
 
 .run-extra-img > img {
   border-radius: 10px;
   display: block;
-  max-width: 100%;
 }
 
 
@@ -313,23 +326,28 @@ nav > ul > li > a {
     padding: 0;
   }
 
-  .run-extra-container {
-    gap: 0;
-  }
-  .run-extra-text {
-    margin: 40px auto;
+  .habbits-container {
+    gap: 80px;
   }
 
-  .run-extra-text {
-    width: 100%;
+  .run-extra-container {
+    gap: 0;
+    padding: 30px;
   }
+
+  #run-extra-btn {
+    text-align: center;
+  }
+
+  /* .run-extra-text {
+    margin: 0 auto;
+  } */
+
+ 
  
   .run-extra-img {
     width: 100%;
-    padding: 30px;
     margin: 0 auto;
   }
-
-
 
 }
