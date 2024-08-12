@@ -282,7 +282,7 @@ nav > ul > li > a {
     padding: 0 20px;
   }
 
-  .nav-items
+  .nav-items,
   .join-now {
     display: none;
   }
