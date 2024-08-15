@@ -14,8 +14,9 @@
   padding: 0;
   /* background: #000; */
 }
-
-
+.hide {
+  display: none;
+}
 
 /* shared styles */
 .display-flex {
@@ -318,6 +319,7 @@ nav > ul > li > a {
   margin: 0 auto;
   justify-content: space-between;
   padding: 50px;
+  gap: 160px;
 }
 
 .bmi-chart-title {
@@ -350,9 +352,9 @@ td {
 }
 
 
-.bmi-calculate {
+/* .bmi-calculate {
   width: 55%;
-}
+} */
 
 .bmi-calculate-title {
   font-size: 1.66rem;
@@ -371,29 +373,41 @@ form {
 }
 
 input, select {
-  width: 14.4rem;
-  margin: 0px 12px 12px 0;
   border: none;
   border-radius: 6px;
-  padding: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  /* padding: 20px 20px; */
   background-color: rgba(255, 255, 255, 0.1);
-  color: color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
-#weight-kg-input {
-  margin-right: 0;
+select {
+  border-width: 0 10px 0 0;
+  border-style: solid;
+  border-color: rgb(56, 56, 56);
+}
+
+.form-row1 {
+  justify-content: space-between;
+}
+
+.form-row2 {
+  justify-content: space-between;
 }
 
 .select1 {
-  width: 16.9rem;
+  /* width: 100%; */
   outline: none;
   text-color: color: rgba(255, 255, 255, 0.6);
-
+  
 }
 
 .select2 {
-  width: 100%;
+  /* width: 100%; */
   outline: none;
   color: color: rgba(255, 255, 255, 0.6);
 }
@@ -405,6 +419,8 @@ input, select {
   border-radius: 42px;
   background: rgb(230, 83, 60);
   margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -418,19 +434,40 @@ input, select {
 }
 
 .team-img-container {
-  width: 1005px;
+  width: 100%;
   margin: o auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 18px;
+}
+
+.team-img-container-row1 {
+  justify-content: space-evenly;
+  padding-top: 18px;
+  padding-bottom: 8px;
+  gap: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.team-img-container-row2 {
+  justify-content: space-evenly;
+  padding-top: 9px;
+  padding-bottom: 18px;
+  gap: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.tariner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .tariner > img {
-  width: 318px;
-  height: 258px;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -491,6 +528,10 @@ footer {
   padding-right: 96px;
 }
 
+.footer-cilmun123 {
+  margin-bottom: 60px;
+}
+
 .fotter-colmun1 {
   width: 50%;
 }
@@ -515,8 +556,7 @@ footer {
 .footer-line {
   border: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0 auto;
-  width: 1005px;
-  margin-top: 60px;
+  width: 100%;
 }
 
 .footer-copyright {
@@ -554,15 +594,17 @@ footer {
   .habbits-container,
   .run-extra-container,
   .bmi-calculator-container,
-  .footer-sec,
+  .form-row1,
+  .form-row2,
+  .team-img-container-row1,
+  .team-img-container-row2,
+  .footer-cilmun123,
   .footer-colmun23 {
     flex-direction: column;
-    gap: 40px;
   }
 
-  .team-img-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .banner {
+    gap: 40px;
   }
 
   .banner-img {
@@ -586,6 +628,7 @@ footer {
 
   .habbits-container {
     gap: 80px;
+    margin-top: 60px;
   }
 
   .run-extra-container {
@@ -620,25 +663,68 @@ footer {
     border-radius: 10px;
   }
 
-  .bmi-calculator {
-    max-width: 576px;
-  }
+  /* 
 
   .bmi-calculate {
     max-width: 576px;
   }
 
+  .bmi-calculator-title-subtitle {
+    max-width: 530px;
+  }
+
+  
+
+  .bmi-calculate > form {
+    width: 100%;
+  } 
+  
+  #weight-kg-input {
+    margin-left: 0px;
+    padding-right: 0px;
+  } */
+  .bmi-calculator {
+    width: 100%;
+  }
+
   .bmi-calculator-container {
+    gap: 20px;
+  }
+
+  input, .select1, .select2 {
+    width: 100%;
+    outline: none;
+    text-color: color: rgba(255, 255, 255, 0.6);
+    padding-right: 0px;
+  }
+
+  .team-img-container {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 0 20px;
+  }
+
+  .footer-cilmun123 {
+
+    gap: 60px;
+  }
+
+  .fotter-colmun1 {
 
   }
 
-  .footer-sec {
-
-  }
   .footer-colmun23 {
+    gap: 60px;
 
   }
 
+  /* .footer-line {
+    width: 100%;
+    padding: 0 20px;
+  } */
 
 
 
