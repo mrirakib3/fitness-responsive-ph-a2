@@ -291,8 +291,9 @@ nav > ul > li > a {
 
 
 /* bmi-calculator section related styles */
+
 .bmi-calculator-title-subtitle {
-  max-width: 636px;
+  width: 1005px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
@@ -312,18 +313,20 @@ nav > ul > li > a {
 .bmi-calculator-container-bg {
   width: 100%;
   background-color: rgb(34, 34, 34);
+  padding-bottom: 60px;
 }
 
 .bmi-calculator-container {
   width: 1005px;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 50px;
   gap: 160px;
 }
 
 .bmi-chart-title {
   font-size: 1.66rem;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 table, th, td {
@@ -346,16 +349,6 @@ td {
   font-size: .83rem;
 }
 
-.bmi-chart-title {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-
-/* .bmi-calculate {
-  width: 55%;
-} */
-
 .bmi-calculate-title {
   font-size: 1.66rem;
   margin-top: 50px;
@@ -367,25 +360,36 @@ td {
   margin-bottom: 32px;
 }
 
-form {
+.form {
   font-size: .95rem;
   outline: none;
 }
 
-input, select {
+input {
+  font-size: .95rem;
+  width: 258px;
   border: none;
   border-radius: 6px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 12px;
   margin-bottom: 12px;
-  /* padding: 20px 20px; */
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   outline: none;
 }
 
 select {
+  font-size: .95rem;
+  border: none;
+  border-radius: 6px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
   border-width: 0 10px 0 0;
   border-style: solid;
   border-color: rgb(56, 56, 56);
@@ -400,28 +404,29 @@ select {
 }
 
 .select1 {
-  /* width: 100%; */
+  width: 270px;
   outline: none;
-  text-color: color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   
 }
 
 .select2 {
-  /* width: 100%; */
+  width: 552px;
   outline: none;
-  color: color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .form-submit {
   font-size: 1rem;
   font-weight: 600;
   color: white;
+  border: none;
   border-radius: 42px;
   background: rgb(230, 83, 60);
   margin-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 15px 50px;
 }
+
 
 
 /* meet-our-team section related styles */
@@ -524,15 +529,15 @@ footer {
 
 .footer-brand-description {
   font-size: .83rem;
-  color: color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   padding-right: 96px;
 }
 
-.footer-cilmun123 {
+.footer-colmun123 {
   margin-bottom: 60px;
 }
 
-.fotter-colmun1 {
+.footer-colmun1 {
   width: 50%;
 }
 
@@ -541,14 +546,14 @@ footer {
   justify-content: space-between;
 }
 
-.fotter-colmun2-title {
+.footer-colmun2-title {
   font-size: 1.66rem;
   font-weight: 700;
   margin-bottom: 35px;
 }
 
-.fotter-colmun2-list,
-.fotter-colmun3-list {
+.footer-colmun2-list,
+.footer-colmun3-list {
   padding-bottom: 18px;
   font-size: 1.36;
 }
@@ -594,11 +599,9 @@ footer {
   .habbits-container,
   .run-extra-container,
   .bmi-calculator-container,
-  .form-row1,
-  .form-row2,
   .team-img-container-row1,
   .team-img-container-row2,
-  .footer-cilmun123,
+  .footer-colmun123,
   .footer-colmun23 {
     flex-direction: column;
   }
@@ -663,39 +666,36 @@ footer {
     border-radius: 10px;
   }
 
-  /* 
-
-  .bmi-calculate {
-    max-width: 576px;
-  }
-
   .bmi-calculator-title-subtitle {
-    max-width: 530px;
-  }
-
-  
-
-  .bmi-calculate > form {
-    width: 100%;
-  } 
-  
-  #weight-kg-input {
-    margin-left: 0px;
-    padding-right: 0px;
-  } */
-  .bmi-calculator {
     width: 100%;
   }
 
   .bmi-calculator-container {
+    width: calc(100% - 20px);
     gap: 20px;
+    padding: 0 20px;
   }
 
-  input, .select1, .select2 {
-    width: 100%;
+  .bmi-calculate {
+    width: calc(100% - 20px);
+  }
+
+  input {
+    width: 183px;
     outline: none;
-    text-color: color: rgba(255, 255, 255, 0.6);
-    padding-right: 0px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .select1 {
+    width: 193px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+  }  
+
+  .select2 {
+    width: 403px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
   }
 
   .team-img-container {
@@ -707,26 +707,22 @@ footer {
     padding: 0 20px;
   }
 
-  .footer-cilmun123 {
-
+  .footer-colmun123 {
     gap: 60px;
   }
 
-  .fotter-colmun1 {
-
-  }
-
-  .footer-colmun23 {
-    gap: 60px;
-
-  }
-
-  /* .footer-line {
+  .footer-colmun1 {
     width: 100%;
-    padding: 0 20px;
-  } */
+  }
+  
+  .footer-colmun23 {
+    width: 100%;
+    gap: 60px;
+  }
 
-
+  .footer-brand-description {
+    width: 100%;
+    padding-right: 0;
 
 
 }

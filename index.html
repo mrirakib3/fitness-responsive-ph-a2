@@ -121,7 +121,8 @@
       </div>
 
       <div class="bmi-calculator-container-bg">
-        <div class="bmi-calculator-container display-flex">
+
+        <div class="bmi-calculator-container section-width display-flex">
           <div class="bmi-chart">
             <h4 class="bmi-chart-title text-white">BMI Calculator Chart</h4>
             <table>
@@ -147,13 +148,14 @@
               </tr>
             </table>
           </div>
+
           <div class="bmi-calculate">
             <h4 class="bmi-calculate-title text-white">Calculate your BMI</h4>
             <p class="bmi-calculate-subtitle text-dark">
               We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.
             </p>
-
-            <form action="">
+  
+            <div class="form">
               <div class="form-row1 display-flex">
                 <div class="input-box">
                   <input type="text" placeholder="Height/cm">
@@ -162,7 +164,7 @@
                   <input id="weight-kg-input" type="text" placeholder="Weight/kg">
                 </div>
               </div>
-
+  
               <div class="form-row2 display-flex">
                 <div class="input-box">
                   <input type="text" placeholder="Age">
@@ -176,7 +178,7 @@
                   </select>
                 </div>
               </div>
-
+  
               <div class="form-row3">
                 <div class="class="select-box2">
                   <select name="" class="select2">
@@ -188,11 +190,13 @@
                 </div>
               </div>
               
-              <input class="form-submit" type="button" value="Calculate">
-            </form>
+              
+            </div>
+            <button class="form-submit">Calculate</button>
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="meet-our-team section-width">
@@ -207,40 +211,28 @@
         <div class="team-img-container-row1 display-flex">
           <div class="tariner">
             <img src="images/trainer1.png" alt="">
-            <h5 class="t-name1">Jerome Bell </h5>
-            <p class="t-subname1">Trainer</p>
           </div>
   
           <div class="tariner">
             <img src="images/trainer2.png" alt="">
-            <h5 class="t-name1">Cameron Will</h5>
-            <p class="t-subname1">Trainer</p>
           </div>
   
           <div class="tariner">
             <img src="images/trainer3.png" alt="">
-            <h5 class="t-name1">Daren Bravo</h5>
-            <p class="t-subname1">Trainer</p>
           </div>
         </div>
 
         <div class="team-img-container-row2 display-flex">
           <div class="tariner">
             <img src="images/trainer4.png" alt="">
-            <h5 class="t-name2">Hudai Ekta</h5>
-            <p class="t-subname2">Trainer</p>
           </div>
   
           <div class="tariner">
             <img src="images/trainer5.png" alt="">
-            <h5 class="t-name2">Ajaira Jalil</h5>
-            <p class="t-subname2">Trainer</p>
           </div>
   
           <div class="tariner">
             <img src="images/trainer6.png" alt="">
-            <h5 class="t-name2">Vikhari Khan</h5>
-            <p class="t-subname2">Trainer</p>
           </div>
         </div>
 
@@ -250,8 +242,8 @@
 
   <footer class="footer">
     <section class="footer-sec section-width">
-      <div class="footer-cilmun123 display-flex">
-        <div class="fotter-colmun1">
+      <div class="footer-colmun123 display-flex">
+        <div class="footer-colmun1">
           <h3 class="brand" id="footer-brand">Fitness</h3>
           <p class="footer-brand-description text-dark">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
         </div>
